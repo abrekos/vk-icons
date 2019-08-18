@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&subset=cyrillic');
+
+body {
+	font-family: 'Roboto';
+	font-weight: 300;
+	color: #222;
+	text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 500;
+}
+
+.icon {
+	font-size: 40px;
+}
+
+.icon__item {
+	width: 120px;
+	text-align: center;
+	border-radius: 6px;
+	border: 2px solid rgba( 0, 0, 0, 0.05 );
+	padding: 8px;
+	box-sizing: border-box;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 5px;
+	cursor: pointer;
+}
+
+.icon__item:hover {
+	border: 2px solid rgba( 0, 0, 0, 0.1 );
+}
+
+.icon__icon {
+	font-size: 36px;
+	margin-bottom: 10px;
+}
+
+.icon__ligature {
+	font-weight: 400;
+	font-size: 12px;
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+#copied {
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	background: rgba( 0, 0, 0, 0.2 );
+	font-weight: 500;
+	padding: 8px;
+	border-radius: 10px;
+	display: none;
+}
+
+.copied_show {
+	display: block !important;
+	animation: copied_show 3s linear forwards;
+}
+
+@keyframes copied_show {
+	from {
+		opacity: 0;
+		display: block;
+	}
+
+	10%, 90% {
+		opacity: 1;
+		bottom: 20px;
+	}
+
+	to {
+		opacity: 0;
+		display: none;
+		bottom: -100px;
+	}
+}
+
+.code {
+	padding: 2px 5px;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+    margin: 2px 0;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: monospace;
+}
