@@ -8,4 +8,4 @@
 ```html
 <span class="vk-icon">newsfeed</span>
 ```
-Используем лигатуры. Список доступных есть здесь: https://abrekos.github.io/vk-icons
+Используем лигатуры. Список доступных есть здесь: https://abrekos.github.io/vk-icons/demo/
